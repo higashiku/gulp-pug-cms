@@ -1,0 +1,16 @@
+{
+  "name" : "GULP PUG Dummy Inc.",
+  "path" : {
+    "css"  : "./assets/css/",
+    "js"   : "./assets/js/",
+    "img"  : "./assets/img/",
+    "root" : "./"
+  },
+  "cms" : false,
+  "cmspath" : {
+    "css"  : "/wordpress/wp-content/themes/demo/assets/css/",
+    "js"   : "/wordpress/wp-content/themes/demo/assets/js/",
+    "img"  : "/wordpress/wp-content/themes/demo/assets/img/",
+    "root" : "/"
+  }
+}

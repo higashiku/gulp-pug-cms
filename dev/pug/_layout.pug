@@ -1,0 +1,25 @@
+- if(site.cms === true)
+  block content
+
+- else
+  doctype
+  html(lang="ja")
+    
+    head
+      meta(charset="UTF-8")
+      title
+        | #{site.name}
+      link(rel="icon" href=site.path.root+"favicon.ico")
+      link(rel="stylesheet" href=site.path.css+"common.css")
+      script(src=site.path.js+"common.js")
+    
+    body
+      //- ヘッダー
+      include ./_header.pug
+      
+      main.main
+        //- ここにコンテンツが入ります
+        block content
+      
+      //- フッター
+      include ./_footer.pug

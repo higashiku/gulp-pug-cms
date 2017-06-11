@@ -1,0 +1,19 @@
+{
+  "name": "Higashiku gulp-pug to WP",
+  "version": "1.0.0",
+  "description": "lesson",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Toshimichi Suekane excode Inc.",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-watch": "^4.3.11"
+  }
+}

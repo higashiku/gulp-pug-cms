@@ -1,0 +1,12 @@
+
+<h1>GULP PUG Dummy へようこそ</h1>
+<p><img src="/wordpress/wp-content/themes/demo/assets/img/cover.jpg"/></p>
+<p>あなたは 1,215 人目の訪問者です。</p>
+<section class="topics">
+<h2>トピックス</h2>
+<ul>
+<li><a href="#">採用情報を更新しました</a></li>
+<li><a href="#">年末年始休業のお知らせ</a></li>
+<li><a href="#">夏季休業のお知らせ</a></li>
+</ul>
+</section>

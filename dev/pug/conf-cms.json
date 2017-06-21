@@ -1,0 +1,9 @@
+{
+  "name" : "GULP PUG Dummy Inc.",
+  "path" : {
+    "css"  : "/cms/themes/demo/assets/css/",
+    "js"   : "/cms/themes/demo/assets/js/",
+    "img"  : "/cms/themes/demo/assets/img/",
+    "root" : "/"
+  }
+}

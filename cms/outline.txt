@@ -1,6 +1,25 @@
-
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>GULP PUG Dummy Inc.</title>
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/cms/themes/demo/assets/css/common.css">
+<script src="/cms/themes/demo/assets/js/common.js"></script>
+</head>
+<body>
+<header class="header">
+<p>GULP PUG Dummy Inc.</p>
+<p><img src="/cms/themes/demo/assets/img/logo.png"></p>
+<ul>
+<li><a href="/products">製品情報</a></li>
+<li><a href="/recruit">採用情報</a></li>
+<li><a href="/contact">お問い合わせ</a></li>
+</ul>
+</header>
+<main class="main">
 <h1>会社概要</h1>
-<p><img src="/wordpress/wp-content/themes/demo/assets/img/cover-outline.jpg"/></p>
+<p><img src="/cms/themes/demo/assets/img/cover-outline.jpg"></p>
 <section class="topics">
 <h2>沿革</h2>
 <ul>
@@ -9,3 +28,19 @@
 <li>平成元年　上場</li>
 </ul>
 </section>
+</main>
+<footer class="footer">
+<p><a href="#">Top</a></p>
+<ul>
+<li><a href="/outline">会社概要</a></li>
+<li><a href="/ir">IR情報</a></li>
+</ul>
+<ul>
+<li><a href="/term">利用規約</a></li>
+<li><a href="/privacy">プライバシポリシー</a></li>
+<li><a href="/sitemap">サイトマップ</a></li>
+</ul>
+<p>&copy; 2017 GULP PUG Dummy Inc.</p>
+</footer>
+</body>
+</html>

@@ -28,8 +28,6 @@ gulp.task('pug', function() {
     }))
 		.pipe(replace(/href="(?!#)(.*)"/g, 'href="$1.html"')) /* リンクに拡張子.htmlを追加 */
     .pipe(gulp.dest('./html')); /* CMS用のディレクトリ./cmsに出力 */
-  
-  gulp.start(['pug-cms']);      /* CMS用のテキスト出力タスクを実行 */
 });
 
 /* --------------------------------------
@@ -39,11 +37,8 @@ gulp.task('pug', function() {
 gulp.task('pug-cms', function() {
   
   var locals = {
-    'site':JSON.parse(fs.readFileSync('./dev/pug/conf.json'))
+    'site':JSON.parse(fs.readFileSync('./dev/pug/conf-cms.json')) /* CMS用の設定ファイルよ読み込む */
   };
-  
-  locals.site.path = locals.site.cmspath; /* ファイルやサイトのパスをCMS用のものに上書き */
-  locals.site.cms = true;                 /* CMSでの出力をtrueに変更 */
   
   gulp.src(['./dev/pug/**/*.pug','!./dev/pug/**/_*.pug'])
 		.pipe(plumber())
@@ -63,6 +58,7 @@ gulp.task('pug-cms', function() {
 gulp.task('default', function() {
   watch('./dev/pug/**/*.pug', function () { /* 監視対処のPugファイルの場所を指定 */
     gulp.start(['pug']);                    /* HTML出力タスクを実行 */
+    gulp.start(['pug-cms']);                /* CMS用のテキスト出力タスクを実行 */
   });
 });
 

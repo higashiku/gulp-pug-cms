@@ -5,5 +5,6 @@
     "js"   : "/cms/themes/demo/assets/js/",
     "img"  : "/cms/themes/demo/assets/img/",
     "root" : "/"
-  }
+  },
+  "cms" : true
 }

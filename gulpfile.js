@@ -26,7 +26,6 @@ gulp.task('pug', function() {
       locals: locals,           /* pugに変数localsを渡す */
   		pretty: true              /* 出力するHTMLをきれいに整形する */
     }))
-		.pipe(replace(/href="(?!#)(.*)"/g, 'href="$1.html"')) /* リンクに拡張子.htmlを追加 */
     .pipe(gulp.dest('./html')); /* CMS用のディレクトリ./cmsに出力 */
 });
 
